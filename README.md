@@ -1,7 +1,7 @@
 # java-development-nuances
 
 ### typical flow
-Request -> Serialize/Deserialize -> Controller -> Business Logic Layer -> DAO/DAOImpl -> DB
+Request -> Serialize/Deserialize -> Controller -> Business Logic Layer -> DAO/DAOImpl -> ORM framework -> DB
 
 When accessing DB from an OOP language, typically need an ORM framework to do the conversion. For Java, there is Hibernate, JPA, and Hibernate with JPA.
 * JPA -> both a specification and a bare bones implementation
