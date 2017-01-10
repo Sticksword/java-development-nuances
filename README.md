@@ -11,8 +11,10 @@ When accessing DB from an OOP language, typically need an ORM framework to do th
 * Hibernate with JPA -> Hibernate but with JPA specs incorporated
  * uses SessionFactory, HQL, Criteria Queries (same name, diff implementation)
  * reference on what changed with JPA specs: http://stackoverflow.com/questions/20820880/hibernate-native-vs-hibernate-jpa
+ * tl;dr you can switch out Hibernate's implementation of JPA with another implmentation (keep same annotations, etc.)
+ * see more: http://stackoverflow.com/questions/9881611/whats-the-difference-between-jpa-and-hibernate
 
-### links and resources
+### more links and resources
 * https://www.reddit.com/r/java/comments/16ovek/understanding_when_to_use_jpa_vs_hibernate/
 * http://softwareengineering.stackexchange.com/questions/211194/api-design-concrete-vs-abstract-approach-best-practices
-* http://stackoverflow.com/questions/9881611/whats-the-difference-between-jpa-and-hibernate
+
