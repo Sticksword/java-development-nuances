@@ -15,6 +15,27 @@ When accessing DB from an OOP language, typically need an ORM framework to do th
  * reference on what changed with JPA specs: http://stackoverflow.com/questions/20820880/hibernate-native-vs-hibernate-jpa
  * tl;dr you can switch out Hibernate's implementation of JPA with another implmentation (keep same annotations, etc.)
  * see more: http://stackoverflow.com/questions/9881611/whats-the-difference-between-jpa-and-hibernate
+ 
+### Effective Java
+#### Chapter 2
+ 1. Consider static factory methods instead of constructors, can have names, not required to create new object each time invoked, can return an object of any subtype of their return type
+ 2. Consider a builder when faced with many constructor params, combines Javabeans and Telescoping patterns and removes the flaws
+
+#### Chapter 3
+
+#### Chapter 4
+
+#### Chapter 5
+
+#### Chapter 6
+
+#### Chapter 7
+
+#### Chapter 8
+
+#### Chapter 9
+
+#### Chapter 10
 
 ### More Links and Resources
 * https://www.reddit.com/r/java/comments/16ovek/understanding_when_to_use_jpa_vs_hibernate/
