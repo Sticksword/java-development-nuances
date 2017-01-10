@@ -16,10 +16,13 @@ When accessing DB from an OOP language, typically need an ORM framework to do th
  * tl;dr you can switch out Hibernate's implementation of JPA with another implmentation (keep same annotations, etc.)
  * see more: http://stackoverflow.com/questions/9881611/whats-the-difference-between-jpa-and-hibernate
  
-### Effective Java
-#### Chapter 2
- 1. Consider static factory methods instead of constructors, can have names, not required to create new object each time invoked, can return an object of any subtype of their return type
- 2. Consider a builder when faced with many constructor params, combines Javabeans and Telescoping patterns and removes the flaws
+### Effective Java Notes
+#### Chapter 2: Creating and Destroying Objects
+ 1. Consider static factory methods instead of constructors -> can have names, not required to create new object each time invoked, can return an object of any subtype of their return type
+ 2. Consider a builder when faced with many constructor params, esp if they are optional -> combines Javabeans and Telescoping patterns and removes the flaws
+ 3. Enforce the singleton property with a private constructor or even better, an enum type -> have to ensure no multiple instances
+ 4. Enforce noninstantiability with a private constructor -> stops people from accidentally instantiating using a default constructor
+ 5. Avoid creating unnecessary objects -> reuse immutable objects, try to use static initializer for things that don't change in a class 
 
 #### Chapter 3
 
