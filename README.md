@@ -22,9 +22,12 @@ When accessing DB from an OOP language, typically need an ORM framework to do th
  2. Consider a builder when faced with many constructor params, esp if they are optional -> combines Javabeans and Telescoping patterns and removes the flaws
  3. Enforce the singleton property with a private constructor or even better, an enum type -> have to ensure no multiple instances
  4. Enforce noninstantiability with a private constructor -> stops people from accidentally instantiating using a default constructor
- 5. Avoid creating unnecessary objects -> reuse immutable objects, try to use static initializer for things that don't change in a class 
+ 5. Avoid creating unnecessary objects -> reuse immutable objects, try to use static initializer for things that don't change in a class, prefer primitives to boxed primitives (eg. use long rather than Long)
+ 6. Eliminate obsolete object references -> avoid having obsolete references (to a machine, an allocated array will stay allocated regardless unless you specifically null out values you don't want)
+ 7. Avoid finalizers -> instead do try-finally blocks in combination with an explicit termination method
 
-#### Chapter 3
+#### Chapter 3: Methods Common to All Objects
+ 8. Be careful when overriding `equals`
 
 #### Chapter 4
 
