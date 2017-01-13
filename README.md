@@ -27,7 +27,16 @@ When accessing DB from an OOP language, typically need an ORM framework to do th
  7. Avoid finalizers -> instead do try-finally blocks in combination with an explicit termination method
 
 #### Chapter 3: Methods Common to All Objects
- 8. Be careful when overriding `equals`
+ 8. Be careful when overriding `equals`, adhere to its general contract from the specification for `Object` [JavaSE6]
+  * reflexive: for any non-null reference value `x`, `x.equals(x) must return `true`
+  * symmetric: for any non-null reference values `x` and `y`, `x.equals(y)` must return the same as `y.equals(x)`
+  * transitive: for any non-null reference values `x`, `y`, and `z`, if `x.equals(y)` and `y.equals(z)` are both true, then `x.equals(z)` must be true
+  * consistent: your overriding `equals` method must be deterministic
+ 9. 
+ 
+ 
+ 
+ ` select * from table`
 
 #### Chapter 4
 
