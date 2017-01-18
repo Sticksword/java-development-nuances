@@ -32,11 +32,8 @@ When accessing DB from an OOP language, typically need an ORM framework to do th
   * symmetric: for any non-null reference values `x` and `y`, `x.equals(y)` must return the same as `y.equals(x)`
   * transitive: for any non-null reference values `x`, `y`, and `z`, if `x.equals(y)` and `y.equals(z)` are both true, then `x.equals(z)` must be true
   * consistent: your overriding `equals` method must be deterministic
- 9. 
- 
- 
- 
- ` select * from table`
+ 9. Always override hashCode when you override `equals`
+ 10. 
 
 #### Chapter 4
 
