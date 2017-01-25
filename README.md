@@ -1,4 +1,5 @@
 # Java Development Nuances
+Feel free to fork and make a pull request! :)
 
 ### Typical Backend Flow
 HTTP Request -> Serialize/Deserialize -> Controller (eg. Spring) -> Business Logic Layer -> DAO/DAOImpl -> ORM framework (eg. Hibernate) -> DB
@@ -33,9 +34,17 @@ When accessing DB from an OOP language, typically need an ORM framework to do th
   * transitive: for any non-null reference values `x`, `y`, and `z`, if `x.equals(y)` and `y.equals(z)` are both true, then `x.equals(z)` must be true
   * consistent: your overriding `equals` method must be deterministic
  9. Always override hashCode when you override `equals`
- 10. 
+ 10. Always override `toString` -> makes the class more pleasant to use
+ 11. Override `clone` judiciously (?)
+ 12. Consider implementing `Comparable` with same precautions in mind as overriding `equals`
 
-#### Chapter 4
+#### Chapter 4: Classes and Interfaces
+ 13. Minimize the accessibility of classes and members -> try to encapsulate (hide implementation information, only show public APIs for communication) so that the modules are decoupled
+  * private: member is accessible only from the top-level class where it is declared
+  * package-private: member is accessible from any class in the package where it is declared (this is the default behavior if no access modifier is specified)
+  * protected: the member is accessible from subclasses of the class where it is declared and from any class in the package where it is declared
+  * public: member is accessible from anywhere
+ 14. 
 
 #### Chapter 5
 
