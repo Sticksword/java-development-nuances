@@ -78,3 +78,6 @@ When accessing DB from an OOP language, typically need an ORM framework to do th
 * https://www.tutorialspoint.com/design_pattern/flyweight_pattern.htm (similar idea in Python, make only what we need)
 * https://www.tutorialspoint.com/design_pattern/builder_pattern.htm (one of the best ways to create a complex object, in small steps)
 
+##### Mildly useful books
+* https://www.manning.com/books/spring-in-action-fourth-edition
+* https://www.amazon.com/Effective-Java-2nd-Joshua-Bloch/dp/0321356683
