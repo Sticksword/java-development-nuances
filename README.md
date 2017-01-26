@@ -70,4 +70,10 @@ When accessing DB from an OOP language, typically need an ORM framework to do th
 ### More Links and Resources
 * https://www.reddit.com/r/java/comments/16ovek/understanding_when_to_use_jpa_vs_hibernate/
 * http://softwareengineering.stackexchange.com/questions/211194/api-design-concrete-vs-abstract-approach-best-practices
+* http://stackoverflow.com/questions/761194/interface-vs-abstract-class-general-oo
+* http://stackoverflow.com/questions/29890562/initializing-list-of-objects-using-polymorphism
+##### Notable design patterns
+* https://www.tutorialspoint.com/design_pattern/factory_pattern.htm (interface with factory, call interface methods, don't need to know implementation details)
+* https://www.tutorialspoint.com/design_pattern/flyweight_pattern.htm (similar idea in Python, make only what we need)
+* https://www.tutorialspoint.com/design_pattern/builder_pattern.htm (one of the best ways to create a complex object, in small steps)
 
