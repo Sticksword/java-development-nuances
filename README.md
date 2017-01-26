@@ -44,7 +44,16 @@ When accessing DB from an OOP language, typically need an ORM framework to do th
   * package-private: member is accessible from any class in the package where it is declared (this is the default behavior if no access modifier is specified)
   * protected: the member is accessible from subclasses of the class where it is declared and from any class in the package where it is declared
   * public: member is accessible from anywhere
- 14. 
+  * note: instance fields should never be public! classes with public mutable fields are not thread-safe
+ 14. In public classes, use accessor methods, not public fields
+ 15. Minimize mutability => minimize complexity, maximize thread-safety (only drawback is that they require space, which is costly when creating many of these separate objects) Also, make every field final unless there is a compelling reason to make it nonfinal.
+ 16. Favor composition over inheritance
+  * Note "inheritance" refers to "implementation inheritance" and not "interface inheritance"
+  * Unlike method invocation, inheritance violates encapsulation -> subclass depends on the implementation details of its superclass for its proper function and when superclass's implementation changes, subclass may break
+  * To avoid problems, instead of extending an existing class, give your new class a private field that references an instance of the existing class -> this design is called composition because the existing class becomes a component of the new one. Each instance method in the new class invokes the corresponding method on the contained instance of the existing class and returns the results -> AKA "forwarding" and the methods in the new class that do this are called "forwarding methods". Implementation would then be a wrapper class and a forwarding class.
+  * Inheritance should only be appropriate when subclass really is a subtype of the superclass. In other words, a class B should extend a class A only if an "is-a" relationship exists between the two classes. ie. Is every B really an A?
+ 17. Design and document for inheritance or else prohibit it
+ 
 
 #### Chapter 5
 
