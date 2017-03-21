@@ -17,9 +17,10 @@ When accessing DB from an OOP language, typically need an ORM framework to do th
  * tl;dr you can switch out Hibernate's implementation of JPA with another implmentation (keep same annotations, etc.)
  * see more: http://stackoverflow.com/questions/9881611/whats-the-difference-between-jpa-and-hibernate
  
-Hibernate Query Language (HQL) Examples: http://www.codejava.net/frameworks/hibernate/hibernate-query-language-hql-example
-Hibernate Criteria Queries Tutorial/Examples: http://howtodoinjava.com/hibernate/hibernate-criteria-queries-tutorial-and-examples/#associations
-Okhttp Examples/Recipes: https://github.com/square/okhttp/wiki/Recipes
+##### Language Misc:
+* Hibernate Query Language (HQL) Examples: http://www.codejava.net/frameworks/hibernate/hibernate-query-language-hql-example
+* Hibernate Criteria Queries Tutorial/Examples: http://howtodoinjava.com/hibernate/hibernate-criteria-queries-tutorial-and-examples/#associations
+* Okhttp Examples/Recipes: https://github.com/square/okhttp/wiki/Recipes
 
  
 ### Effective Java Notes
