@@ -20,6 +20,7 @@ When accessing DB from an OOP language, typically need an ORM framework to do th
 ##### Language Misc:
 * Spring basically has a 3 layer approach to developing APIs, @Repository, @Service, and @Controller (all 3 are Spring Components): http://stackoverflow.com/questions/6827752/whats-the-difference-between-component-repository-service-annotations-in
 * Hibernate Query Language (HQL) Examples: http://www.codejava.net/frameworks/hibernate/hibernate-query-language-hql-example
+* Another HQL guide that's a bit more recent: http://www.journaldev.com/2954/hibernate-query-language-hql-example-tutorial
 * Hibernate Criteria Queries Tutorial/Examples: http://howtodoinjava.com/hibernate/hibernate-criteria-queries-tutorial-and-examples/#associations
 * Okhttp Examples/Recipes: https://github.com/square/okhttp/wiki/Recipes
 
