@@ -2,7 +2,7 @@
 Feel free to fork and make a pull request! :)
 
 ### Typical Backend Flow
-HTTP Request -> Serialize/Deserialize -> Controller (eg. Spring) -> Business Logic Layer -> DAO/DAOImpl -> ORM framework (eg. Hibernate) -> DB
+HTTP Request -> Serialize/Deserialize/Auth -> Controller -> Service/Business Logic Layer -> DAO/DAOImpl -> ORM framework (eg. Hibernate) -> DB
 
 
 ### Java ORM Specifics
