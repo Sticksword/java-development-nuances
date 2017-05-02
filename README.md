@@ -23,6 +23,8 @@ When accessing DB from an OOP language, typically need an ORM framework to do th
 * Another HQL guide that's a bit more recent: http://www.journaldev.com/2954/hibernate-query-language-hql-example-tutorial
 * Hibernate Criteria Queries Tutorial/Examples: http://howtodoinjava.com/hibernate/hibernate-criteria-queries-tutorial-and-examples/#associations
 * Okhttp Examples/Recipes: https://github.com/square/okhttp/wiki/Recipes
+* Java 8 Lambdas: https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html
+* Java 8 Stream examples: http://www.java2s.com/Tutorials/Java/Stream_How_to/List/Remove_element_from_List_with_removeIf_method.htm
 
  
 ### Effective Java Notes
